@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QvaTube — Streaming cubano: películas, series, anime, música y libros</title>
+  <meta name="description" content="QvaTube reúne películas, series, novelas, anime, música, libros y TV en vivo en una sola app. Hecho para Cuba y pensado para redes lentas. Web y Android.">
+  <meta name="theme-color" content="#0a0a0b">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="QvaTube">
+  <meta property="og:title" content="QvaTube — Todo el entretenimiento. Un solo lugar.">
+  <meta property="og:description" content="Películas, series, novelas, anime, música, libros y TV en vivo. Streaming cubano para web y Android.">
+  <meta property="og:url" content="https://qvatube.cu/">
+  <meta property="og:image" content="https://qvatube.cu/assets/icon-512.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icon-512.png">
+  <link rel="stylesheet" href="https://qvatube.hidenplay.net/fonts/fonts.css?v=2" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://qvatube.hidenplay.net/fonts/fonts.css?v=2"></noscript>
+  <link rel="canonical" href="https://qvatube.cu/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <img class="brand-logo" src="assets/logo.png" alt="QvaTube" width="1613" height="479">
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#contenido">Contenido</a>
+        <a href="#ventajas">Ventajas</a>
+        <a href="#planes">Planes</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#faq">Preguntas</a>
+      </nav>
+
+      <a class="btn btn-primary header-cta" href="https://qvatube.hidenplay.net" target="_blank" rel="noopener">
+        Abrir QvaTube
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <nav aria-label="Navegación móvil">
+        <a href="#contenido">Contenido</a>
+        <a href="#ventajas">Ventajas</a>
+        <a href="#planes">Planes</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#faq">Preguntas</a>
+        <a class="btn btn-primary" href="https://qvatube.hidenplay.net" target="_blank" rel="noopener">Abrir QvaTube</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+    <!-- ── Hero ─────────────────────────────────────────────── -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <h1>Todo el entretenimiento. <span>Un solo lugar.</span></h1>
+          <p class="lead">
+            Películas, series, novelas, anime, música, libros y TV en vivo.
+            QvaTube está hecho para Cuba y pensado para redes lentas: entra,
+            elige y dale play desde el móvil, la PC o la tele.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="https://qvatube.hidenplay.net" target="_blank" rel="noopener">
+              Modo Web
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86A1 1 0 0 0 8 5.14Z"/></svg>
+            </a>
+            <a class="btn btn-outline btn-lg" href="https://github.com/QvaDev-Team/QvaTube_APK/releases/download/latest/qvatube.apk" download rel="noopener" aria-label="Descargar APK de QvaTube para Android">
+              Descargar APK
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><polyline points="7 10 12 15 17 10"/><path d="M4 19h16"/></svg>
+            </a>
+          </div>
+
+          <p class="hero-note">Gratis para siempre · Planes desde <strong><span data-plan-min-cup>20</span> CUP</strong> a la semana</p>
+
+          <dl class="hero-stats">
+            <div>
+              <dt><span class="live-dot" data-stats-dot aria-hidden="true"></span>Conectados</dt>
+              <dd><span data-stat="online">—</span></dd>
+            </div>
+            <div>
+              <dt>
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                Viendo ahora
+              </dt>
+              <dd><span data-stat="watching">—</span></dd>
+            </div>
+            <div>
+              <dt>
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M12 2.2c.7 3.7 2.1 5.1 5.8 5.8-3.7.7-5.1 2.1-5.8 5.8-.7-3.7-2.1-5.1-5.8-5.8 3.7-.7 5.1-2.1 5.8-5.8z"/><path d="M19 15.5c.3 1.7 1 2.4 2.7 2.7-1.7.3-2.4 1-2.7 2.7-.3-1.7-1-2.4-2.7-2.7 1.7-.3 2.4-1 2.7-2.7z"/></svg>
+                Nuevo hoy
+              </dt>
+              <dd><span data-stat="new-today">—</span></dd>
+            </div>
+            <div>
+              <dt>
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><polyline points="7 10 12 15 17 10"/><path d="M4 19h16"/></svg>
+                Actividad hoy
+              </dt>
+              <dd><span data-stat="activity-today">—</span></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal">
+          <span class="live-pill"><span class="live-dot" aria-hidden="true"></span> En vivo</span>
+
+          <div class="app-window" aria-label="Vista previa de la interfaz de QvaTube" role="img">
+            <div class="app-mock">
+              <div class="app-topbar">
+                <img class="app-logo" src="assets/logo.png" alt="" width="1613" height="479">
+                <div class="app-search">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  Buscar...
+                </div>
+                <span class="app-menu" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+                </span>
+              </div>
+
+              <div class="app-body">
+                <div class="app-hero">
+                  <img class="app-hero-logo" src="assets/logo.png" alt="" width="1613" height="479">
+                  <p class="app-hero-tagline">Todo el entretenimiento, en un solo lugar</p>
+                  <p class="app-hero-desc">
+                    Películas, series, novelas, anime, música y libros — en línea o
+                    para descargar, con catálogo actualizado todos los días. Todo
+                    centralizado en un mismo sitio, sin pagar varias plataformas por
+                    separado.
+                  </p>
+                  <div class="app-hero-actions">
+                    <span class="app-hero-btn app-hero-btn--accent">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M12 2.2c.7 3.7 2.1 5.1 5.8 5.8-3.7.7-5.1 2.1-5.8 5.8-.7-3.7-2.1-5.1-5.8-5.8 3.7-.7 5.1-2.1 5.8-5.8z"/><path d="M19 15.5c.3 1.7 1 2.4 2.7 2.7-1.7.3-2.4 1-2.7 2.7-.3-1.7-1-2.4-2.7-2.7 1.7-.3 2.4-1 2.7-2.7z"/></svg>
+                      Sugerir contenido
+                    </span>
+                    <span class="app-hero-btn app-hero-btn--telegram">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                      Únete a Telegram
+                    </span>
+                  </div>
+                  <div class="app-hero-actions">
+                    <span class="app-hero-btn app-hero-btn--whatsapp">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12c0-4.7 3.9-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.9 8.5-8.5 8.5c-1.3 0-2.5-.3-3.6-.8L4 21l1.1-4.2A8.4 8.4 0 0 1 3.5 12z"/></svg>
+                      Únete a WhatsApp
+                    </span>
+                    <span class="app-hero-btn app-hero-btn--apk">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><polyline points="7 10 12 15 17 10"/><path d="M4 19h16"/></svg>
+                      Descargar app
+                    </span>
+                  </div>
+                </div>
+
+                <div class="app-row-head">
+                  <span class="app-row-title">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M12 3.2 14.5 9l6.3.6-4.8 4.2 1.4 6.1L12 16.8 6.6 19.9l1.4-6.1-4.8-4.2L9.5 9z"/></svg>
+                    Recomendaciones
+                  </span>
+                </div>
+
+                <div class="app-row">
+                  <div class="poster poster-red">
+                    <span class="poster-art" style="background-image: url('assets/poster-breaking-bad.jpg')" aria-hidden="true"></span>
+                    <span class="poster-hd">HD</span>
+                    <span class="poster-title">Breaking Bad</span>
+                    <span class="poster-sub">Serie · Drama, Crimen</span>
+                  </div>
+                  <div class="poster poster-blue">
+                    <span class="poster-art" style="background-image: url('assets/poster-solo-leveling.jpg')" aria-hidden="true"></span>
+                    <span class="poster-hd">HD</span>
+                    <span class="poster-title">Solo Leveling</span>
+                    <span class="poster-sub">Anime · Acción, Fantasía</span>
+                  </div>
+                  <div class="poster poster-amber">
+                    <span class="poster-art" style="background-image: url('assets/poster-working-man.jpg')" aria-hidden="true"></span>
+                    <span class="poster-hd">HD</span>
+                    <span class="poster-title">A Working Man</span>
+                    <span class="poster-sub">Película · Acción, Crimen</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="app-nav" aria-hidden="true">
+                <span class="app-nav-item is-active">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 10v9.5h5v-6h2v6h5V10"/></svg>
+                  <span class="app-nav-label">Inicio</span>
+                </span>
+                <span class="app-nav-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.9 2.3c.6 3.2-.6 4.6-2.1 6.1-1.7 1.7-2.8 3.2-2.8 5.4a4 4 0 0 0 8 0c0-1-.3-1.8-.8-2.6.9.5 1.8 1.6 1.8 3.4a5.9 5.9 0 1 1-11.8 0c0-4 2.6-6 4.5-8 1.1-1.2 1.7-2.3 1.5-3.6.6.3 1.1.8 1.5 1.3z"/></svg>
+                </span>
+                <span class="app-nav-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/><path d="M15.5 8.5a6 6 0 0 1 0 7"/><path d="M8.5 8.5a6 6 0 0 0 0 7"/><path d="M18 6a10 10 0 0 1 0 12"/><path d="M6 6a10 10 0 0 0 0 12"/></svg>
+                </span>
+                <span class="app-nav-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.2c.7 3.7 2.1 5.1 5.8 5.8-3.7.7-5.1 2.1-5.8 5.8-.7-3.7-2.1-5.1-5.8-5.8 3.7-.7 5.1-2.1 5.8-5.8z"/><path d="M19 15.5c.3 1.7 1 2.4 2.7 2.7-1.7.3-2.4 1-2.7 2.7-.3-1.7-1-2.4-2.7-2.7 1.7-.3 2.4-1 2.7-2.7z"/></svg>
+                </span>
+                <span class="app-nav-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5.7c2.5-1.1 5.3-1.1 8.5.6 3.2-1.7 6-1.7 8.5-.6v12.9c-2.5-1.1-5.3-1.1-8.5.6-3.2-1.7-6-1.7-8.5-.6z"/><line x1="12" y1="6.3" x2="12" y2="19.2"/></svg>
+                </span>
+                <span class="app-nav-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="18" r="2.5" fill="currentColor" stroke="none"/><circle cx="17.5" cy="16" r="2.5" fill="currentColor" stroke="none"/><line x1="9" y1="18" x2="9" y2="5.5"/><line x1="20" y1="16" x2="20" y2="3.5"/><line x1="9" y1="5.5" x2="20" y2="3.5"/><line x1="9" y1="9.5" x2="20" y2="7.5"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card">
+            <span class="float-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/></svg>
+            </span>
+            <div>
+              <strong><span data-catalog-size>21.167</span> Títulos</strong>
+              <span>Películas, series, anime y música</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Cinta de categorías ──────────────────────────────── -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Películas</span><i></i><span>Series</span><i></i><span>Novelas</span><i></i><span>Anime</span><i></i><span>Música</span><i></i><span>Libros</span><i></i><span>TV en vivo</span><i></i>
+        <span>Películas</span><i></i><span>Series</span><i></i><span>Novelas</span><i></i><span>Anime</span><i></i><span>Música</span><i></i><span>Libros</span><i></i><span>TV en vivo</span><i></i>
+      </div>
+    </div>
+
+    <!-- ── Contenido ────────────────────────────────────────── -->
+    <section class="section" id="contenido">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="kicker">El catálogo</p>
+            <h2>Todo lo que quieres ver. <span>Y escuchar.</span></h2>
+          </div>
+          <p class="section-lead">
+            Un solo catálogo para toda la familia: cine, series, anime, música,
+            libros y canales en vivo. Sin saltar entre apps ni buscar en cinco sitios.
+          </p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card reveal">
+            <span class="category-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 4v16M17 4v16M3 9h4M17 9h4M3 15h4M17 15h4"/></svg>
+            </span>
+            <h3>Películas</h3>
+            <p>Estrenos, clásicos y cine cubano para una noche de sofá.</p>
+            <span class="category-tag">Incluido en todos los planes</span>
+          </article>
+
+          <article class="category-card reveal">
+            <span class="category-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="3"/><path d="m8 6 2.5 4M14 6l2.5 4M8 12h8M7 19v2M17 19v2"/></svg>
+            </span>
+            <h3>Series y novelas</h3>
+            <p>Temporadas completas, capítulos nuevos y novelas para seguir el hilo.</p>
+            <span class="category-tag">Incluido en todos los planes</span>
+          </article>
+
+          <article class="category-card reveal">
+            <span class="category-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.2 5.4L20 9.6l-4.2 3.9 1.1 5.9L12 16.6l-4.9 2.8 1.1-5.9L4 9.6l5.8-1.2z"/></svg>
+            </span>
+            <h3>Anime</h3>
+            <p>Shonen, clásicos y temporadas en emisión, doblaje y subtítulos.</p>
+            <span class="category-tag">Incluido en todos los planes</span>
+          </article>
+
+          <article class="category-card reveal">
+            <span class="category-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/><path d="M9 18V5.5l11-2v12.5M9 9.5l11-2"/></svg>
+            </span>
+            <h3>Música</h3>
+            <p>Escucha por artista, guarda canciones y sigue sonando mientras navegas.</p>
+            <span class="category-tag">Reproductor integrado</span>
+          </article>
+
+          <article class="category-card reveal">
+            <span class="category-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16M8 7h8M8 11h6"/></svg>
+            </span>
+            <h3>Libros</h3>
+            <p>Lee en el navegador con un lector EPUB cómodo y guarda tu progreso.</p>
+            <span class="category-tag">Lector incluido</span>
+          </article>
+
+          <article class="category-card reveal">
+            <span class="category-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="13" rx="2.5"/><path d="m8 3 4 4 4-4"/><path d="M8 13h2M14 13h2"/></svg>
+            </span>
+            <h3>TV en vivo</h3>
+            <p>Canales cubanos y señales en directo, sin instalar nada extra.</p>
+            <span class="category-tag">Directo 24/7</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Ventajas ─────────────────────────────────────────── -->
+    <section class="section section--surface" id="ventajas">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="kicker">Por qué QvaTube</p>
+            <h2>Pensado para <span>conexiones reales</span>.</h2>
+          </div>
+          <p class="section-lead">
+            No es una copia de otro servicio: cada decisión está tomada para que
+            funcione bien con datos justos, en un móvil modesto y sin dar vueltas.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17a8 8 0 0 1 16 0"/><path d="M12 17v.01"/><path d="M8.5 13.5a5 5 0 0 1 7 0"/><path d="M6 10a9 9 0 0 1 12 0"/></svg>
+            </span>
+            <h3>Hecho para redes lentas</h3>
+            <p>Carga por partes, fuentes e imágenes optimizadas y reproducción mientras descarga. Menos espera, más play.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="13" height="10" rx="2"/><rect x="17" y="8" width="4.5" height="12" rx="1.5"/><path d="M7 18h4"/></svg>
+            </span>
+            <h3>Web, Android y TV</h3>
+            <p>Abre QvaTube en el navegador, instálalo como app o descarga el APK. También hay modo TV para la pantalla grande.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 8v4l3 2"/></svg>
+            </span>
+            <h3>Sigue donde lo dejaste</h3>
+            <p>Progreso, favoritos, historial y recomendaciones. Tu cuenta te sigue al cambiar de dispositivo.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10.5a6 6 0 0 1 12 0c0 4.2 1.3 5.8 2 6.5H4c.7-.7 2-2.3 2-6.5z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+            </span>
+            <h3>Nuevos episodios, al instante</h3>
+            <p>Activa las notificaciones y entérate cuando llega el capítulo que esperas o vence tu plan.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13a3 3 0 0 1 3 3v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h11"/><path d="M4 10h16"/><path d="M8 15h4"/></svg>
+            </span>
+            <h3>Paga como puedas</h3>
+            <p>Transfermóvil en CUP, QvaPay en USD y saldo móvil para Ultra. Elige lo que te resulte más fácil.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16"/><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4H20v12H6.5A2.5 2.5 0 0 0 4 18.5"/><path d="M8 8h8M8 11.5h5"/></svg>
+            </span>
+            <h3>Música y libros incluidos</h3>
+            <p>No todo es video. Reproductor de música persistente y lector de libros dentro de la misma cuenta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Cómo funciona ────────────────────────────────────── -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <div>
+            <p class="kicker">Cómo funciona</p>
+            <h2>Tres pasos y <span>dale play</span>.</h2>
+          </div>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Crea tu cuenta</h3>
+            <p>Regístrate con email o entra desde Telegram. También puedes explorar como invitado antes de decidir.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Elige tu plan</h3>
+            <p>Empieza gratis o desbloquea más descargas y reproducciones. Los planes se pagan en CUP o USD.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Disfruta</h3>
+            <p>Ve en el móvil, la PC o la TV. Tu progreso, favoritos y música te esperan donde lo dejaste.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── Planes ───────────────────────────────────────────── -->
+    <section class="section section--surface" id="planes">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <div>
+            <p class="kicker">Planes</p>
+            <h2>Elige cuánto <span>quieres ver</span>.</h2>
+          </div>
+          <p class="section-lead section-lead--center">
+            Sin letra chica: cada plan define cuántas descargas, reproducciones y
+            música puedes disfrutar. Empieza gratis y sube cuando lo necesites.
+          </p>
+        </div>
+
+        <div class="billing-toggle reveal" role="group" aria-label="Moneda de los planes">
+          <button type="button" class="billing-btn is-active" data-currency="cup" aria-pressed="true">CUP · por semana</button>
+          <button type="button" class="billing-btn" data-currency="usd" aria-pressed="false">USD · por mes</button>
+        </div>
+
+        <p class="plans-sync" data-plans-status role="status" aria-live="polite"></p>
+
+        <div class="plans-grid">
+          <article class="plan reveal" data-plan="free">
+            <div class="plan-head">
+              <h3>Gratis</h3>
+              <p class="plan-price plan-price--static"><span class="amount">Gratis</span></p>
+              <p class="plan-desc">Para empezar sin pagar nada.</p>
+            </div>
+            <ul class="plan-list">
+              <li data-quota="download">2 descargas de video</li>
+              <li data-quota="stream">1 reproducción a la vez</li>
+              <li data-quota="music-download">15 canciones offline</li>
+              <li data-quota="music-stream">50 escuchas de música</li>
+              <li>Catálogo completo</li>
+            </ul>
+            <a class="btn btn-outline plan-cta" href="https://qvatube.hidenplay.net" target="_blank" rel="noopener">Empezar gratis</a>
+          </article>
+
+          <article class="plan reveal" data-plan="normal">
+            <div class="plan-head">
+              <h3>Normal</h3>
+              <p class="plan-price">
+                <span class="amount" data-cup="20" data-usd="$1">20</span>
+                <span class="price-side">
+                  <span class="unit" data-cup="CUP" data-usd="USD">CUP</span>
+                  <span class="period" data-cup="por semana" data-usd="por mes">por semana</span>
+                </span>
+              </p>
+              <p class="plan-desc">Para ver algo cada semana.</p>
+            </div>
+            <ul class="plan-list">
+              <li data-quota="download">7 descargas de video</li>
+              <li data-quota="stream">3 reproducciones a la vez</li>
+              <li data-quota="music-download">45 canciones offline</li>
+              <li data-quota="music-stream">150 escuchas de música</li>
+              <li>Catálogo completo</li>
+            </ul>
+            <a class="btn btn-outline plan-cta" href="https://qvatube.hidenplay.net" target="_blank" rel="noopener">Elegir Normal</a>
+          </article>
+
+          <article class="plan reveal" data-plan="avanzado">
+            <div class="plan-head">
+              <h3>Avanzado</h3>
+              <p class="plan-price">
+                <span class="amount" data-cup="40" data-usd="$2">40</span>
+                <span class="price-side">
+                  <span class="unit" data-cup="CUP" data-usd="USD">CUP</span>
+                  <span class="period" data-cup="por semana" data-usd="por mes">por semana</span>
+                </span>
+              </p>
+              <p class="plan-desc">El equilibrio para toda la casa.</p>
+            </div>
+            <ul class="plan-list">
+              <li data-quota="download">14 descargas de video</li>
+              <li data-quota="stream">7 reproducciones a la vez</li>
+              <li data-quota="music-download">90 canciones offline</li>
+              <li data-quota="music-stream">300 escuchas de música</li>
+              <li>Catálogo completo</li>
+            </ul>
+            <a class="btn btn-outline plan-cta" href="https://qvatube.hidenplay.net" target="_blank" rel="noopener">Elegir Avanzado</a>
+          </article>
+
+          <article class="plan reveal" data-plan="super">
+            <div class="plan-head">
+              <h3>Súper</h3>
+              <p class="plan-price">
+                <span class="amount" data-cup="60" data-usd="$3">60</span>
+                <span class="price-side">
+                  <span class="unit" data-cup="CUP" data-usd="USD">CUP</span>
+                  <span class="period" data-cup="por semana" data-usd="por mes">por semana</span>
+                </span>
+              </p>
+              <p class="plan-desc">Para maratones de fin de semana.</p>
+            </div>
+            <ul class="plan-list">
+              <li data-quota="download">25 descargas de video</li>
+              <li data-quota="stream">14 reproducciones a la vez</li>
+              <li data-quota="music-download">180 canciones offline</li>
+              <li data-quota="music-stream">600 escuchas de música</li>
+              <li>Catálogo completo</li>
+            </ul>
+            <a class="btn btn-outline plan-cta" href="https://qvatube.hidenplay.net" target="_blank" rel="noopener">Elegir Súper</a>
+          </article>
+
+          <article class="plan plan--ultra plan--popular reveal" data-plan="ultra">
+            <span class="plan-badge">Más popular</span>
+            <div class="plan-head">
+              <h3>Ultra</h3>
+              <p class="plan-price">
+                <span class="amount" data-cup="100" data-usd="$5">100</span>
+                <span class="price-side">
+                  <span class="unit" data-cup="CUP" data-usd="USD">CUP</span>
+                  <span class="period" data-cup="por semana" data-usd="por mes">por semana</span>
+                </span>
+              </p>
+              <p class="plan-desc">Sin límites, para los que no quieren contar.</p>
+            </div>
+            <ul class="plan-list">
+              <li data-quota="download">Descargas ilimitadas</li>
+              <li data-quota="stream">Reproducciones ilimitadas</li>
+              <li data-quota="music-download">Música sin límite</li>
+              <li>Pago con saldo móvil</li>
+              <li>Catálogo completo</li>
+            </ul>
+            <a class="btn btn-primary plan-cta" href="https://qvatube.hidenplay.net" target="_blank" rel="noopener">Elegir Ultra</a>
+          </article>
+        </div>
+
+        <p class="plans-note reveal">
+          Precios base: CUP por semana con Transfermóvil y USD por mes con QvaPay.
+          El saldo móvil está disponible solo para Ultra. Los precios pueden
+          actualizarse desde la app.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── FAQ ──────────────────────────────────────────────── -->
+    <section class="section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro reveal">
+          <p class="kicker">Preguntas frecuentes</p>
+          <h2>Lo que suelen <span>preguntar</span>.</h2>
+          <p class="section-lead">
+            Si te queda otra duda, la app tiene tutoriales paso a paso y soporte
+            desde la propia cuenta.
+          </p>
+          <a class="link-arrow" href="https://qvatube.hidenplay.net/tutoriales" target="_blank" rel="noopener">
+            Ver tutoriales
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>
+              <span>¿QvaTube es gratis?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Sí. El plan Gratis incluye catálogo completo, 2 descargas de video al período, 1 reproducción simultánea y música. Si necesitas más, puedes subir a un plan desde <span data-plan-min-cup>20</span> CUP a la semana o <span data-plan-min-usd>1</span> USD al mes.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>¿Cómo pago mi plan?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>En Cuba, por Transfermóvil en CUP (pago semanal). Desde el exterior, por QvaPay en USD (pago mensual). El plan Ultra también admite pago con saldo móvil. Cada pago se confirma y tu plan se activa sin perder los días que te queden.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>¿Funciona con internet lento?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Eso está pensado desde el principio: la web carga por partes, usa fuentes e imágenes optimizadas y reproduce el video mientras lo recibe, sin esperar a descargarlo entero. Si tu conexión se cae, al volver retomas donde ibas.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>¿Hay app para Android o TV?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Sí. Puedes instalar QvaTube como aplicación desde el navegador (PWA) o descargar el APK oficial. En la tele, abre la web en el navegador del Smart TV o usa el modo TV pensado para pantallas grandes y controles remotos.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>¿Qué incluye exactamente el catálogo?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Películas, series, novelas, anime, música, libros en formato EPUB y canales de TV en vivo. El catálogo se actualiza de forma constante con contenido nuevo, capítulos y estrenos.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>¿Necesito Telegram para usar la web?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              <p>Puedes crear tu cuenta con email y contraseña. Telegram se usa para verificar la cuenta y para las descargas que entrega el bot, pero no necesitas saber usarlo para ver contenido en la web.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA final ────────────────────────────────────────── -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <p class="kicker">Empieza hoy</p>
+          <h2>Dale play a tu <span>próxima historia</span>.</h2>
+          <p class="cta-copy">
+            Crea tu cuenta gratis y estrena esta noche. Sin instalación obligatoria,
+            sin compromisos y con todo el catálogo a un toque.
+          </p>
+          <div class="cta-actions">
+            <a class="btn btn-primary btn-lg" href="https://qvatube.hidenplay.net" target="_blank" rel="noopener">
+              Abrir QvaTube
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </a>
+            <a class="btn btn-outline btn-lg" href="https://github.com/QvaDev-Team/QvaTube_APK/releases/download/latest/qvatube.apk" download rel="noopener" aria-label="Descargar APK de QvaTube para Android">Descargar APK</a>
+          </div>
+          <p class="cta-note">Web + Android · Gratis para empezar</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#inicio">
+          <img class="brand-logo" src="assets/logo.png" alt="QvaTube" width="1613" height="479">
+        </a>
+        <p>Streaming cubano: películas, series, novelas, anime, música, libros y TV en vivo. Hecho para redes reales.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Plataforma">
+        <h3>Plataforma</h3>
+        <a href="#contenido">Contenido</a>
+        <a href="#ventajas">Ventajas</a>
+        <a href="#planes">Planes</a>
+        <a href="#faq">Preguntas</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Recursos">
+        <h3>Recursos</h3>
+        <a href="https://qvatube.hidenplay.net/tutoriales" target="_blank" rel="noopener">Tutoriales</a>
+        <a href="https://qvatube.hidenplay.net/terminos" target="_blank" rel="noopener">Términos</a>
+        <a href="https://github.com/QvaDev-Team/QvaTube_APK/releases/download/latest/qvatube.apk" download rel="noopener" aria-label="Descargar APK de QvaTube para Android">Descargar APK</a>
+        <a href="https://qvatube.hidenplay.net" target="_blank" rel="noopener">Abrir la app</a>
+      </nav>
+
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <p>Reportes, sugerencias y soporte desde tu cuenta en la app.</p>
+        <a class="footer-cta" href="https://qvatube.hidenplay.net" target="_blank" rel="noopener">
+          Ir a QvaTube
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> QvaDev Team. Todos los derechos reservados.</p>
+      <p>Hecho para Cuba · Web + Android</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
